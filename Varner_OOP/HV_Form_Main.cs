@@ -13,6 +13,7 @@ namespace Varner_OOP
     public partial class HV_Form_Main : Form
     {
         Form F1 = new HV_Form_2019_01_15();
+        Form F2 = new HV_Form_2019_01_29();
 
         public HV_Form_Main()
         {
@@ -33,6 +34,17 @@ namespace Varner_OOP
 
             F1.Visible = true;
             F1.Activate();
+        }
+
+        private void HV_btn_2019_01_29_Click(object sender, EventArgs e)
+        {
+            if (F2.Visible == false)
+            {
+                F2 = new HV_Form_2019_01_29();
+            }
+
+            F2.Visible = true;
+            F2.Activate();
         }
     }
 }

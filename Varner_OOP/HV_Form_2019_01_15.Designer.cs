@@ -38,7 +38,7 @@
             // 
             this.HV_lbl_Time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.HV_lbl_Time.ForeColor = System.Drawing.Color.Red;
-            this.HV_lbl_Time.Location = new System.Drawing.Point(386, 119);
+            this.HV_lbl_Time.Location = new System.Drawing.Point(12, 132);
             this.HV_lbl_Time.Name = "HV_lbl_Time";
             this.HV_lbl_Time.Size = new System.Drawing.Size(294, 55);
             this.HV_lbl_Time.TabIndex = 0;
@@ -51,24 +51,26 @@
             // 
             // HV_btn_Timer
             // 
-            this.HV_btn_Timer.Location = new System.Drawing.Point(477, 207);
+            this.HV_btn_Timer.Location = new System.Drawing.Point(92, 209);
             this.HV_btn_Timer.Name = "HV_btn_Timer";
             this.HV_btn_Timer.Size = new System.Drawing.Size(140, 44);
             this.HV_btn_Timer.TabIndex = 1;
             this.HV_btn_Timer.Text = "Start";
             this.HV_btn_Timer.UseVisualStyleBackColor = true;
+            this.HV_btn_Timer.Click += new System.EventHandler(this.HV_btn_Timer_Click);
             // 
             // HV_Form_2019_01_15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 554);
+            this.ClientSize = new System.Drawing.Size(320, 554);
             this.Controls.Add(this.HV_btn_Timer);
             this.Controls.Add(this.HV_lbl_Time);
             this.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Name = "HV_Form_2019_01_15";
             this.Text = "HV_Form_2019_01_15";
+            this.Load += new System.EventHandler(this.HV_Form_2019_01_15_Load);
             this.ResumeLayout(false);
 
         }
