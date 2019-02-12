@@ -32,6 +32,8 @@
             this.HV_list_1 = new System.Windows.Forms.ListBox();
             this.HV_btn_1 = new System.Windows.Forms.Button();
             this.HV_Sorting = new System.Windows.Forms.CheckBox();
+            this.HV_btn_2 = new System.Windows.Forms.Button();
+            this.HV_btn_3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HV_txt_1
@@ -51,12 +53,13 @@
             this.HV_list_1.Name = "HV_list_1";
             this.HV_list_1.Size = new System.Drawing.Size(563, 532);
             this.HV_list_1.TabIndex = 1;
+            this.HV_list_1.SelectedIndexChanged += new System.EventHandler(this.HV_list_1_SelectedIndexChanged);
             // 
             // HV_btn_1
             // 
             this.HV_btn_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.HV_btn_1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.HV_btn_1.Location = new System.Drawing.Point(563, 15);
+            this.HV_btn_1.Location = new System.Drawing.Point(574, 15);
             this.HV_btn_1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.HV_btn_1.Name = "HV_btn_1";
             this.HV_btn_1.Size = new System.Drawing.Size(110, 30);
@@ -76,6 +79,32 @@
             this.HV_Sorting.UseVisualStyleBackColor = true;
             this.HV_Sorting.CheckedChanged += new System.EventHandler(this.HV_Sorting_CheckedChanged);
             // 
+            // HV_btn_2
+            // 
+            this.HV_btn_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.HV_btn_2.Location = new System.Drawing.Point(574, 67);
+            this.HV_btn_2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.HV_btn_2.Name = "HV_btn_2";
+            this.HV_btn_2.Size = new System.Drawing.Size(110, 30);
+            this.HV_btn_2.TabIndex = 4;
+            this.HV_btn_2.Text = "Delete";
+            this.HV_btn_2.UseVisualStyleBackColor = false;
+            this.HV_btn_2.Click += new System.EventHandler(this.HV_btn_2_Click);
+            // 
+            // HV_btn_3
+            // 
+            this.HV_btn_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.HV_btn_3.Location = new System.Drawing.Point(574, 122);
+            this.HV_btn_3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.HV_btn_3.Name = "HV_btn_3";
+            this.HV_btn_3.Size = new System.Drawing.Size(110, 30);
+            this.HV_btn_3.TabIndex = 5;
+            this.HV_btn_3.Text = "Update";
+            this.HV_btn_3.UseVisualStyleBackColor = false;
+            this.HV_btn_3.Click += new System.EventHandler(this.HV_btn_3_Click);
+            // 
             // HV_Form_2019_02_05
             // 
             this.AcceptButton = this.HV_btn_1;
@@ -83,6 +112,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.HV_btn_1;
             this.ClientSize = new System.Drawing.Size(1303, 762);
+            this.Controls.Add(this.HV_btn_3);
+            this.Controls.Add(this.HV_btn_2);
             this.Controls.Add(this.HV_Sorting);
             this.Controls.Add(this.HV_btn_1);
             this.Controls.Add(this.HV_list_1);
@@ -102,5 +133,7 @@
         private System.Windows.Forms.ListBox HV_list_1;
         private System.Windows.Forms.Button HV_btn_1;
         private System.Windows.Forms.CheckBox HV_Sorting;
+        private System.Windows.Forms.Button HV_btn_2;
+        private System.Windows.Forms.Button HV_btn_3;
     }
 }
