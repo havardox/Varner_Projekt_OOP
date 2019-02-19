@@ -31,6 +31,7 @@
             this.HV_btn_2019_01_15 = new System.Windows.Forms.Button();
             this.HV_btn_2019_01_29 = new System.Windows.Forms.Button();
             this.HV_btn_2019_02_05 = new System.Windows.Forms.Button();
+            this.HV_btn_2019_02_19 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HV_btn_2019_01_15
@@ -69,11 +70,24 @@
             this.HV_btn_2019_02_05.UseVisualStyleBackColor = false;
             this.HV_btn_2019_02_05.Click += new System.EventHandler(this.HV_btn_2019_02_05_Click_1);
             // 
+            // HV_btn_2019_02_19
+            // 
+            this.HV_btn_2019_02_19.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.HV_btn_2019_02_19.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.HV_btn_2019_02_19.Location = new System.Drawing.Point(44, 382);
+            this.HV_btn_2019_02_19.Name = "HV_btn_2019_02_19";
+            this.HV_btn_2019_02_19.Size = new System.Drawing.Size(187, 59);
+            this.HV_btn_2019_02_19.TabIndex = 3;
+            this.HV_btn_2019_02_19.Text = "19.02.2019";
+            this.HV_btn_2019_02_19.UseVisualStyleBackColor = false;
+            this.HV_btn_2019_02_19.Click += new System.EventHandler(this.HV_btn_2019_02_19_Click);
+            // 
             // HV_Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 404);
+            this.ClientSize = new System.Drawing.Size(272, 522);
+            this.Controls.Add(this.HV_btn_2019_02_19);
             this.Controls.Add(this.HV_btn_2019_02_05);
             this.Controls.Add(this.HV_btn_2019_01_29);
             this.Controls.Add(this.HV_btn_2019_01_15);
@@ -91,6 +105,7 @@
         private System.Windows.Forms.Button HV_btn_2019_01_15;
         private System.Windows.Forms.Button HV_btn_2019_01_29;
         private System.Windows.Forms.Button HV_btn_2019_02_05;
+        private System.Windows.Forms.Button HV_btn_2019_02_19;
     }
 }
 

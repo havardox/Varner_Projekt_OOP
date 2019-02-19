@@ -64,6 +64,12 @@
     <Compile Include="HV_Form_2019_02_05.Designer.cs">
       <DependentUpon>HV_Form_2019_02_05.cs</DependentUpon>
     </Compile>
+    <Compile Include="HV_Form_2019_02_19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HV_Form_2019_02_19.Designer.cs">
+      <DependentUpon>HV_Form_2019_02_19.cs</DependentUpon>
+    </Compile>
     <Compile Include="HV_Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HV_Form_2019_02_05.resx">
       <DependentUpon>HV_Form_2019_02_05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HV_Form_2019_02_19.resx">
+      <DependentUpon>HV_Form_2019_02_19.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HV_Form_Main.resx">
       <DependentUpon>HV_Form_Main.cs</DependentUpon>
