@@ -35,6 +35,10 @@
             this.HV_btn_1 = new System.Windows.Forms.Button();
             this.HV_open = new System.Windows.Forms.OpenFileDialog();
             this.HV_lbl_3 = new System.Windows.Forms.Label();
+            this.HV_btn_2 = new System.Windows.Forms.Button();
+            this.HV_font_dialog = new System.Windows.Forms.FontDialog();
+            this.HV_btn_3 = new System.Windows.Forms.Button();
+            this.HV_color_dialog = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // HV_txt_1
@@ -99,11 +103,35 @@
             this.HV_lbl_3.TabIndex = 5;
             this.HV_lbl_3.Text = "label1";
             // 
+            // HV_btn_2
+            // 
+            this.HV_btn_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_2.Location = new System.Drawing.Point(534, 54);
+            this.HV_btn_2.Name = "HV_btn_2";
+            this.HV_btn_2.Size = new System.Drawing.Size(138, 41);
+            this.HV_btn_2.TabIndex = 6;
+            this.HV_btn_2.Text = "Font";
+            this.HV_btn_2.UseVisualStyleBackColor = false;
+            this.HV_btn_2.Click += new System.EventHandler(this.HV_btn_2_Click);
+            // 
+            // HV_btn_3
+            // 
+            this.HV_btn_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_3.Location = new System.Drawing.Point(678, 54);
+            this.HV_btn_3.Name = "HV_btn_3";
+            this.HV_btn_3.Size = new System.Drawing.Size(138, 41);
+            this.HV_btn_3.TabIndex = 7;
+            this.HV_btn_3.Text = "Värv";
+            this.HV_btn_3.UseVisualStyleBackColor = false;
+            this.HV_btn_3.Click += new System.EventHandler(this.HV_btn_3_Click);
+            // 
             // HV_Form_2019_02_19
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1467, 762);
+            this.Controls.Add(this.HV_btn_3);
+            this.Controls.Add(this.HV_btn_2);
             this.Controls.Add(this.HV_lbl_3);
             this.Controls.Add(this.HV_btn_1);
             this.Controls.Add(this.HV_lbl_2);
@@ -128,5 +156,9 @@
         private System.Windows.Forms.Button HV_btn_1;
         private System.Windows.Forms.OpenFileDialog HV_open;
         private System.Windows.Forms.Label HV_lbl_3;
+        private System.Windows.Forms.Button HV_btn_2;
+        private System.Windows.Forms.FontDialog HV_font_dialog;
+        private System.Windows.Forms.Button HV_btn_3;
+        private System.Windows.Forms.ColorDialog HV_color_dialog;
     }
 }
