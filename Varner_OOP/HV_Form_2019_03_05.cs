@@ -119,12 +119,27 @@ namespace Varner_OOP
 
         private void HV_btn_PlusMinus_Click(object sender, EventArgs e)
         {
+            string text = HV_Display.Text;
+            if (text[0] == '-')
+            {
+                text = text.Substring(1);
+            }
 
+            else if (text != "0")
+            {
+                text = "-" + text;
+            }
+
+            HV_Display.Text = text;
         }
 
         private void HV_btn_Comma_Click(object sender, EventArgs e)
         {
-
+            if (!HV_Display.Text.Contains(','))
+            {
+                HV_Display.Text += ",";
+            }
+           
         }
 
         private void HV_btn_CE_Click(object sender, EventArgs e)
@@ -139,7 +154,45 @@ namespace Varner_OOP
 
         private void HV_btn_Back_Click(object sender, EventArgs e)
         {
+            string text = HV_Display.Text;
+            text = text.Substring(0, text.Length - 1);
 
+            if (text == "")
+            {
+                text = "0";
+            }
+
+            HV_Display.Text = text; 
+        }
+
+        private void HV_btn_Divide_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void HV_btn_Multiply_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HV_btn_Substract_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HV_btn_Add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HV_btn_Compute_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private double ToDouble(string str)
+        {
+            return double.Parse(str.Replace(",", "."));
         }
     }
 }

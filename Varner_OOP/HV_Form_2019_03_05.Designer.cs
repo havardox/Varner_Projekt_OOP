@@ -45,12 +45,22 @@
             this.HV_btn_7 = new System.Windows.Forms.Button();
             this.HV_btn_Back = new System.Windows.Forms.Button();
             this.HV_Display = new System.Windows.Forms.Label();
+            this.HV_btn_Substract = new System.Windows.Forms.Button();
+            this.HV_btn_Multiply = new System.Windows.Forms.Button();
+            this.HV_btn_Divide = new System.Windows.Forms.Button();
+            this.HV_btn_Add = new System.Windows.Forms.Button();
+            this.HV_btn_Compute = new System.Windows.Forms.Button();
             this.HV_GroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // HV_GroupBox
             // 
             this.HV_GroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_GroupBox.Controls.Add(this.HV_btn_Compute);
+            this.HV_GroupBox.Controls.Add(this.HV_btn_Add);
+            this.HV_GroupBox.Controls.Add(this.HV_btn_Divide);
+            this.HV_GroupBox.Controls.Add(this.HV_btn_Multiply);
+            this.HV_GroupBox.Controls.Add(this.HV_btn_Substract);
             this.HV_GroupBox.Controls.Add(this.HV_btn_PlusMinus);
             this.HV_GroupBox.Controls.Add(this.HV_btn_Comma);
             this.HV_GroupBox.Controls.Add(this.HV_btn_0);
@@ -239,6 +249,61 @@
             this.HV_Display.Text = "0";
             this.HV_Display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // HV_btn_Substract
+            // 
+            this.HV_btn_Substract.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_Substract.Location = new System.Drawing.Point(227, 222);
+            this.HV_btn_Substract.Name = "HV_btn_Substract";
+            this.HV_btn_Substract.Size = new System.Drawing.Size(64, 50);
+            this.HV_btn_Substract.TabIndex = 16;
+            this.HV_btn_Substract.Text = "-";
+            this.HV_btn_Substract.UseVisualStyleBackColor = false;
+            this.HV_btn_Substract.Click += new System.EventHandler(this.HV_btn_Substract_Click);
+            // 
+            // HV_btn_Multiply
+            // 
+            this.HV_btn_Multiply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_Multiply.Location = new System.Drawing.Point(227, 166);
+            this.HV_btn_Multiply.Name = "HV_btn_Multiply";
+            this.HV_btn_Multiply.Size = new System.Drawing.Size(64, 50);
+            this.HV_btn_Multiply.TabIndex = 17;
+            this.HV_btn_Multiply.Text = "*";
+            this.HV_btn_Multiply.UseVisualStyleBackColor = false;
+            this.HV_btn_Multiply.Click += new System.EventHandler(this.HV_btn_Multiply_Click);
+            // 
+            // HV_btn_Divide
+            // 
+            this.HV_btn_Divide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_Divide.Location = new System.Drawing.Point(227, 110);
+            this.HV_btn_Divide.Name = "HV_btn_Divide";
+            this.HV_btn_Divide.Size = new System.Drawing.Size(64, 50);
+            this.HV_btn_Divide.TabIndex = 18;
+            this.HV_btn_Divide.Text = "/";
+            this.HV_btn_Divide.UseVisualStyleBackColor = false;
+            this.HV_btn_Divide.Click += new System.EventHandler(this.HV_btn_Divide_Click);
+            // 
+            // HV_btn_Add
+            // 
+            this.HV_btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_Add.Location = new System.Drawing.Point(227, 278);
+            this.HV_btn_Add.Name = "HV_btn_Add";
+            this.HV_btn_Add.Size = new System.Drawing.Size(64, 50);
+            this.HV_btn_Add.TabIndex = 19;
+            this.HV_btn_Add.Text = "+";
+            this.HV_btn_Add.UseVisualStyleBackColor = false;
+            this.HV_btn_Add.Click += new System.EventHandler(this.HV_btn_Add_Click);
+            // 
+            // HV_btn_Compute
+            // 
+            this.HV_btn_Compute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.HV_btn_Compute.Location = new System.Drawing.Point(227, 334);
+            this.HV_btn_Compute.Name = "HV_btn_Compute";
+            this.HV_btn_Compute.Size = new System.Drawing.Size(64, 50);
+            this.HV_btn_Compute.TabIndex = 20;
+            this.HV_btn_Compute.Text = "=";
+            this.HV_btn_Compute.UseVisualStyleBackColor = false;
+            this.HV_btn_Compute.Click += new System.EventHandler(this.HV_btn_Compute_Click);
+            // 
             // HV_Form_2019_03_05
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -273,5 +338,10 @@
         private System.Windows.Forms.Button HV_btn_CE;
         private System.Windows.Forms.Button HV_btn_7;
         private System.Windows.Forms.Button HV_btn_Back;
+        private System.Windows.Forms.Button HV_btn_Compute;
+        private System.Windows.Forms.Button HV_btn_Add;
+        private System.Windows.Forms.Button HV_btn_Divide;
+        private System.Windows.Forms.Button HV_btn_Multiply;
+        private System.Windows.Forms.Button HV_btn_Substract;
     }
 }
